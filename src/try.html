@@ -1,0 +1,34 @@
+<div id = "main">
+  <div class="jumbotron" >
+    <h3>
+      Please enter two key words to search for:
+    </h3>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <p>
+          <input class="form-control" type="text" id="txtInput1" >
+          <input class="form-control" type="text" id="txtInput2" >
+          <input type="checkbox" id="ngram_check">ngram<br>
+          <button type="button"  class="btn btn-default"  onclick="runSearch()">Submit</button>
+        </br>
+        Line Chart: 				<input class="form-control" type="radio"  name="radio_charts" value="LineChart" checked="checked">
+        Scatter Chart: 				<input class="form-control" type="radio"  name="radio_charts" value="ScatterChart">
+        MultiBar Chart: 			<input class="form-control" type="radio"  name="radio_charts" value="MultiBarChart">
+        SunBurst Chart(by Author): 	<input class="form-control" type="radio"  name="radio_charts" value="sunburstChart">
+      </p>
+    </div>
+  </form>
+</div>
+
+<div id="help_div" width ="800px" hight="600px"  style="visibility:hidden;" >
+</div>
+<div id="results_div" width ="100%" hight="100%" style="visibility:hidden;">
+  <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="100%"
+  height="100%"
+  viewBox="0 0 1300 800"
+  preserveAspectRatio="xMinYMin meet"
+  >
+</div>
+</div>

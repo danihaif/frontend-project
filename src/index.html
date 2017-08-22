@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project for ngraming Ben Yehuda project">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>Project For n-graming Ben Yehuda Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+
+
+  <meta charset="utf-8">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/nv.d3.css" rel="stylesheet">
+	<link href="css/scatter.css" rel="stylesheet"  charset="utf-8">
+	<link href="css/CirclePacking.css" rel="stylesheet"  charset="utf-8">
+	<!--   -->
+    <!--Loading the scripts.js file for runtime use-->
+
+	 <script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+    <script src="js/nv.d3.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+ <script src="js/scripts.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home"></a></h1>
+			<i class="icon-remove menu-close"></i>
+			<a href="#home" class="smoothScroll">Home</a>
+      <!-- <a href="#search" class="smoothScroll">Serach</a> -->
+      <a href="#search"><a href ="search.html">Search Page</a>
+			<a href="#about" class="smoothScroll">About</a>
+      <a target="_blank" href="http://benyehuda.org/">Ben Yehuda Project</a>
+			<a href="#contact" class="smoothScroll">Contact Us</a>
+		</div>
+
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="icon-reorder"></i></div>
+	</nav>
+
+
+
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="logo">
+				<img src="assets/img/ben-yehuda.jpg" height="100" width="100" >
+			</div>
+			<br>
+			<div class="row">
+				<h1>Ben Yehuda Word Frequency Checker</h1>
+				<br>
+				<h3>Created by Ben Gurion University students.</h3>
+				<div class="col-lg-6 col-lg-offset-3">
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+
+	<!-- ========== ABOUT SECTION ========== -->
+	<section id="about" name="about"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<h3>ABOUT THE PROJECT</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+				<!-- INTRO INFORMATIO-->
+				<div class="col-lg-6 col-lg-offset-3">
+          <article>
+            <p>This project was inspired by Google ngrams and meant to serve as a tool for checking word popularity over a timeline.</p>
+            <p>First, all texts were scanned using parts of speach tagger developed by Meni Adler. <a href="https://www.cs.bgu.ac.il/~elhadad/nlp12/hebrew/TagHebrew.html">Link</a></p>
+            <p>Individual words were then counted and inserted into a database together with the year they were written,author and text. After the database was ready, it allowed interesting visualisation of word populerity, words by author, words by text.</p>
+            <div class = "tech" style="padding-left:150px;color:white;text-align:left;">
+              <p> <h2 style="color:white">Technologies used</h2>
+          <ul>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>PHP</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul></p>
+        </article>
+				</div>
+      </div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /f -->
+
+
+	<!-- ========== CAROUSEL SECTION ========== -->
+	<!-- <section id="portfolio" name="portfolio"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3>SOME PROJECTS</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+				<div class="col-lg-6 col-lg-offset-3"
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> -->
+						<!-- Wrapper for slides -->
+						<!-- <div class="carousel-inner">
+							<div class="item active centered">
+								<img class="img-responsive" src="assets/img/c1.png" alt="">
+							</div>
+							<div class="item centered">
+								<img class="img-responsive" src="assets/img/c2.png" alt="">
+							</div>
+							<div class="item centered">
+								<img class="img-responsive" src="assets/img/c3.png" alt="">
+							</div>
+						</div>
+						<br>
+						<br>
+						<ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>
+					</div>
+				</div><!- col-lg-8 -->
+
+
+
+	<!-- ========== CONTACT SECTION ========== -->
+	<section id="contact" name="contact"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<h3>CONTACT US</h3>
+        <p>Yoav Amir - yoavamir@gmail.com</p>
+        <p>Gilad Hoshmand - giladhosh@post.bgu.ac.il </p>
+        <p>Daniel Gal - danihaif@gmail.com</p>
+        <p>Shahar Terem - shahar87@gmail.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

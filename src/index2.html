@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ben Yehuda word ngram</title>
+
+    <meta name="description" content="Project for ngraming Ben Yehuda project">
+    <meta name="author" content="giladhos">
+	<meta charset="utf-8">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/nv.d3.css" rel="stylesheet">
+	<link href="css/scatter.css" rel="stylesheet"  charset="utf-8">
+	<link href="css/CirclePacking.css" rel="stylesheet"  charset="utf-8">
+	<!--   -->
+    <!--Loading the scripts.js file for runtime use-->
+
+	 <script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+    <script src="js/nv.d3.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+	 <!--
+	 <script src="js/scatter.js" charset="utf-8"></script>
+	-->
+  </head>
+
+  <body>
+
+
+<div class = "page-header">
+
+   <h1>
+     Ben Yehuda word frequency checker
+      <small style="font-size:0.5em">Created by Ben Gurion University students</small>
+   </h1>
+
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span
+class="icon-bar"></span>
+					</button> <a class="navbar-brand" href="#">Home</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a target="_blank" href="http://benyehuda.org/">Ben Yehuda Project</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">Creators</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Action</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Report Bug</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="jumbotron">
+			<h3>
+				Please enter two key words to search for:
+			</h3>
+			<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+						<p>
+							<input class="form-control" type="text" id="txtInput1" >
+							<input class="form-control" type="text" id="txtInput2" >
+							<button type="button"  class="btn btn-default"  onclick="runSearch()">Submit</button>
+							</br>
+							Line Chart: 				<input class="form-control" type="radio"  name="radio_charts" value="LineChart" checked="checked">
+							Scatter Chart: 				<input class="form-control" type="radio"  name="radio_charts" value="ScatterChart">
+							MultiBar Chart: 			<input class="form-control" type="radio"  name="radio_charts" value="MultiBarChart">
+							SunBurst Chart(by Author): 	<input class="form-control" type="radio"  name="radio_charts" value="sunburstChart">
+							Cirlce Pack(author):		<input class="form-control" type="radio"  name="radio_charts" value="CirclePackAuthor">
+						</p>
+						</div>
+			 </form>
+		</div>
+	</div>
+</div>
+<div id="help_div" width ="800px" hight="600px"  style="visibility:hidden;" >
+</div>
+<div id="results_div" width ="100%" hight="100%" style="visibility:hidden;">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+	viewBox="0 0 1300 800"
+    preserveAspectRatio="xMinYMin meet"
+>
+</div>
+  </body>
+</html>

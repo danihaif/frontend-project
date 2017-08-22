@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Serach Words!</title>
+
+  <meta name="description" content="Project for ngraming Ben Yehuda project">
+  <meta name="author" content="giladhos">
+  <meta charset="utf-8">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/nv.d3.css" rel="stylesheet">
+  <link href="css/scatter.css" rel="stylesheet"  charset="utf-8">
+  <link href="css/CirclePacking.css" rel="stylesheet"  charset="utf-8">
+<link href="assets/css/main.css" rel="stylesheet">
+  <!--   -->
+  <!--Loading the scripts.js file for runtime use-->
+
+  <script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+  <script src="js/nv.d3.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <!--
+  <script src="js/scatter.js" charset="utf-8"></script>
+-->
+
+<style>
+#main {
+  /*background: : url('C:\Users\\Daniel\\Desktop\\images.png') ;*/
+  /*background-color: yellow;*/
+}
+
+</style>
+</head>
+
+<body>
+  <div id = "main">
+    <div class="jumbotron" >
+      <h3>
+        Please enter two key words to search for:
+      </h3>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <p>
+            <input class="form-control" type="text" id="txtInput1" >
+            <input class="form-control" type="text" id="txtInput2" >
+             <input type="checkbox" id="ngram_check" onclick="changeNgramMode(this)">ngram<br>
+            <button type="button"  class="btn btn-default"  onclick="runSearch()">Submit</button>
+          </br>
+          Line Chart: 				<input class="form-control" type="radio"  name="radio_charts" value="LineChart" checked="checked">
+          Scatter Chart: 				<input class="form-control" type="radio"  name="radio_charts" value="ScatterChart">
+          MultiBar Chart: 			<input class="form-control" type="radio"  name="radio_charts" value="MultiBarChart">
+          SunBurst Chart(by Author): 	<input class="form-control" type="radio"  name="radio_charts" value="sunburstChart">
+        </p>
+      </div>
+    </form>
+  </div>
+
+  <div id="help_div" width ="800px" hight="600px"  style="visibility:hidden;" >
+  </div>
+  <div id="results_div" width =15000px height=6000px style="visibility:hidden;">
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    viewBox="0 0 1300 800"
+    preserveAspectRatio="xMinYMin meet"
+    >
+  </div>
+
+</div>
+</body>
+</html>

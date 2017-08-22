@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>About the Project</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="http://127.0.0.1/mini/src/index.html#">Home</a></li>
+  </ul>
+</nav>
+
+<article>
+  <h1>Ben Yehuda Word Frequency Checker</h1>
+  <p>This project was inspired by Google ngrams and meant to serve as a tool for checking word popularity over a timeline.</p>
+  <p>First, all texts were scanned using parts of speach tagger developed by Meni Adler. <a href="https://www.cs.bgu.ac.il/~elhadad/nlp12/hebrew/TagHebrew.html">Link</a></p>
+  <p>Individual words were then counted and inserted into a database together with the year they were written,author and text. After the database was ready, it allowed interesting visualisation of word populerity, words by author, words by text.</p>
+  <p> <h2>Technologies used</h2>
+
+<ul>
+  <li>Python</li>
+  <li>MySQL</li>
+  <li>PHP</li>
+  <li>Javascript</li>
+  <li>HTML</li>
+  <li>CSS</li>
+
+
+
+</ul>  </p>
+</article>
+
+<footer>Ben Gurion University of the Negev</footer>
+
+</div>
+
+</body>
+</html>
